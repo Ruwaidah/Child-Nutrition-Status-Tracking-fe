@@ -1,0 +1,707 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 240, 240);
+}
+.App-logo {
+  height: 40vmin;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.header {
+  font-size: 25px;
+  width: 30% !important;
+}
+
+/* Error */
+
+.error {
+  margin: 0;
+  font-size: 19px;
+  color: rgb(199, 80, 80);
+  text-align: start;
+  width: 40%;
+  background: none;
+}
+
+.nav {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin: 40px 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn a {
+  color: black;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.active {
+  color: rgb(19, 100, 25) !important;
+  /* background: rgba(34, 34, 34, 0.96); */
+}
+.nav .malo {
+  margin: 0;
+  width: 40%;
+}
+.nav .malo h1 {
+  margin: 0;
+}
+
+.nav .malo h3 {
+  font-size: 20px;
+  width: 100%;
+}
+.nav .user-nav {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+.nav .logout button {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-right: 28px;
+  border: none;
+  color: red;
+}
+
+/* Login */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background: url(./Images/food1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.loginDiv {
+  font-family: "Roboto", sans-serif;
+  /* height: 500px; */
+  /* background: #222222; */
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background: none;
+  /* border-radius: 10px; */
+  /* box-shadow: #222222 10px 5px 50px; */
+}
+
+.loginDiv h3 {
+  background: none;
+  width: 40%;
+  font-size: 40px;
+  color: black;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.loginDiv form {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+.container .header div {
+  /* margin-bottom: 10px; */
+  background: none;
+}
+
+.container .header h3 {
+  background: none;
+}
+
+.container div h1 {
+  background: none;
+}
+@media screen and (max-width: 1400px) {
+  .container .header {
+    width: 100% !important;
+    margin-bottom: 10px;
+    background: none;
+  }
+
+  .container .header h3 {
+    width: 100%;
+  }
+  .error {
+    width: 68%;
+  }
+  .loginDiv {
+    margin: 0 auto;
+  }
+  .loginDiv h3 {
+    font-size: 30px;
+    width: 68%;
+  }
+  .loginDiv form {
+    width: 70%;
+  }
+  .loginDiv form .line label {
+    font-size: 23px;
+  }
+  .loginDiv form .line input {
+    font-size: 23px;
+  }
+}
+
+.loginDiv form div {
+  background: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginDiv form div input {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  padding-left: 10px;
+  width: 96%;
+  font-size: 28px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.loginDiv form div label {
+  background: none;
+  width: 96%;
+  text-align: start;
+  font-size: 28px;
+  margin-right: 15px;
+  color: black;
+}
+.loginDiv .forgot {
+  background: none;
+  /* margin-top: 20px; */
+  color: white;
+  height: 40px;
+  margin: 0;
+}
+
+.loginDiv .forgot a {
+  background: none;
+  color: rgb(199, 80, 80);
+  font-size: 17px;
+}
+.loginDiv form button {
+  font-size: 25px;
+  width: 200px;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background: #222222;
+  height: 54px;
+  margin-top: 20px;
+}
+
+.loginDiv form button:hover {
+  /* color: #222222; */
+  /* color: wheat; */
+  border: white 1px solid;
+}
+
+.countries,
+.communities,
+.list-div {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.countries .countriesList,
+.childs-list,
+.communities .communitiesList,
+.childs-list {
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto 0 auto;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.countries .addcountry,
+.communities .addcommunity,
+.addChild,
+.addrecord {
+  width: 100%;
+  margin: 30px auto;
+  width: 100%;
+  text-align: end;
+}
+.countries a,
+.communities a,
+.list-div a,
+.addrecord a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
+.countries .countriesList a .communities .communitiesList a {
+  padding-left: 10px;
+  margin-top: 10px;
+  text-align: start;
+  margin-bottom: 16px;
+}
+.communities .communitiesList,
+.childs-list {
+  padding-top: 40px;
+}
+
+.communities .communitiesList h2,
+.childs-list h2 {
+  margin-bottom: 40px;
+}
+
+.country,
+.community,
+.child {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  /* text-align: center;
+  width: 20%; */
+}
+
+.childs-list h2 {
+  color: black;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card:first-child {
+  margin-top: 40px;
+}
+.user-card {
+  margin-bottom: 20px;
+}
+.list-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  color: white;
+}
+.alllist,
+.edite-compo form {
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  font-family: "Roboto", sans-serif;
+}
+
+.field {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.field p {
+  /* width: 50%; */
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.field h5,
+.edite-compo form label {
+  text-align: end;
+  font-size: 20px;
+  /* width: 25%; */
+  margin: 0;
+  margin-right: 40px;
+}
+
+.form-div {
+  background: #282c34;
+}
+
+.alllist .field,
+.edite-compo form .field {
+  justify-content: start;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.alllist .field input,
+.edite-compo form input {
+  padding: 6px 0 10px 6px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.alllist .field h5,
+.edite-compo form label {
+  width: 160px;
+  text-align: start;
+  margin: 0;
+}
+
+.alllist .field p {
+  font-size: 22px;
+}
+
+.alllist .field select,
+.edite-compo form .field select {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.alllist .del-edite,
+.edite-compo form .sub-cancel {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.alllist .del-edite button,
+.edite-compo form .sub-cancel button {
+  outline: none;
+  font-size: 18px;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+.alllist .del-edite button:last-child,
+.edite-compo form .sub-cancel button:last-child {
+  margin-left: 60px;
+}
+/* Create User */
+
+/* .createUser {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.editeForm {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  background: rgba(34, 34, 34, 0.96);
+  position: fixed;
+  top: 150px;
+  left: 26%;
+  z-index: 1;
+  animation: fadeIn 1s;
+  width: 50%;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.editeForm div {
+  background: rgba(34, 34, 34, 0.96);
+  margin: 0 auto;
+}
+
+.editeForm div:last-child {
+  display: flex;
+}
+
+.editeForm div:last-child button {
+  font-size: 20px;
+  padding: 6px 20px;
+  border: none;
+}
+.editeForm div:last-child button:last-child {
+  margin-left: 40px;
+}
+
+.editeForm input,
+#editeForm label {
+  font-size: 1.9rem;
+}
+
+.editeForm label {
+  font-size: 25px;
+  width: 20%;
+  color: whitesmoke;
+  text-align: end;
+  margin-right: 10px;
+  background: none;
+}
+
+.editeForm input {
+  font-size: 1.5rem;
+  width: 50%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 10px;
+}
+
+/* Countries */
+
+/* ###################################### child-View */
+
+.addrecord {
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+  margin: 60px auto 0 auto;
+  text-align: center;
+}
+
+.addrecord a {
+  color: rgb(114, 30, 30);
+}
+.childView {
+  width: 100%;
+}
+.child-profile,
+.record {
+  font-family: "Roboto", sans-serif;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.child-profile .field,
+.record .field {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 28%;
+  border: black 1px solid;
+  height: 58px;
+}
+
+.child-profile .field h5,
+.record .field h5 {
+  padding-left: 10px;
+  font-size: 18px;
+  text-align: start;
+  margin: 0;
+}
+
+.child-profile .field p,
+.record .field p {
+  padding-left: 10px;
+  font-size: 22px;
+}
+
+.childTrack {
+  margin-left: 8%;
+  margin-top: 6%;
+}
+
+.record-container {
+  /* margin: 0 auto; */
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: 4%;
+}
+
+.date {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.record {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: start;
+}
+
+.record .field {
+  width: 40%;
+  border: none;
+  height: 28px;
+}
+.record .field h5 {
+  padding: 0;
+}
+.disc {
+  width: 100% !important;
+}
+.record-container .date {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.newChild {
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  margin: 60px auto;
+}
+
+.newChild h1 {
+  margin-bottom: 40px;
+}
+.newChild form,
+.adding-newRecord form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.newChild form div,
+.adding-newRecord form div {
+  margin: 10px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 46%;
+}
+
+.newChild form div label,
+.adding-newRecord form div label {
+  font-size: 20px;
+}
+
+.newChild form div input,
+.adding-newRecord form div input {
+  border-radius: 2px;
+  padding-left: 10px;
+  font-size: 18px;
+  height: 48px;
+  border: none;
+  outline: black;
+  background: rgb(219, 217, 217);
+}
+
+.newChild .add-child-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.newChild .add-child-btn button {
+  width: 40%;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 18px;
+}
+
+.viewallrecords {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  text-align: end !important;
+  color: rgb(85, 28, 28);
+}
+
+/* adding ew record for a child */
+.adding-newRecord {
+  margin-top: 60px;
+  border-top: black solid 1px;
+  width: 100%;
+}
+
+.adding-newRecord h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.adding-newRecord form {
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  margin: 0 auto;
+}
+#adding-des {
+  width: 100%;
+}
+
+#adding-des textarea {
+  height: 100px;
+}
+
+#adding-record-btns {
+  width: 100%;
+}
+
+#adding-record-btns button {
+  font-family: "Roboto", sans-serif;
+  width: 40%;
+  margin: 10px auto;
+  height: 40px;
+}
+
+.chart {
+  margin: 40px auto;
+  width: 60%;
+}
+
+@media screen and (max-width: 1400px) {
+  .chart {
+    width: 80%;
+  }
+
+  .chartjs-render-monitor {
+    margin: 40px 0 40px 0 !important;
+  }
+}
